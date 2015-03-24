@@ -1,0 +1,36 @@
+﻿import turtle               # Usa a biblioteca de turtle graphics
+window = turtle.Screen()    # cria uma janela
+window.bgcolor("white")
+window.title("Forca")
+
+tartaruga   = turtle.Turtle()  # Cria um objeto "desenhador"
+tartaruga.speed(3)  # define a velocidade
+tartaruga.penup() # Remova e veja o que acontece
+tartaruga.setpos(-270,00)
+tartaruga.pendown()
+tartaruga.color("black")
+tartaruga.pensize(5)
+tartaruga.ht()
+
+
+
+for i in range(1):
+    tartaruga.left(90)  # Vira o angulo pedido
+    tartaruga.forward(250) # Avança a distancia pedida
+for i in range(2):
+    tartaruga.right(90)
+    tartaruga.forward(75)
+for i in range(1) :
+    tartaruga.penup()
+    tartaruga.setpos(-120,00)
+    tartaruga.left(90)
+for i in range(10):
+    tartaruga.pendown()
+    tartaruga.pensize(2)
+    tartaruga.color('green')
+    tartaruga.left(0)
+    tartaruga.forward(30)
+    tartaruga.penup()
+    tartaruga.color('white')
+    tartaruga.forward(30)
+escolhajogador = window.textinput('', 'escreva uma letra')
